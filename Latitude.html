@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Latitude</title>
+  <!-- Bring in our bootstrap stylesheet -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="Latitude.html"><span class="title-button">Latitude</span></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <div class="navbar-nav ml-auto">
+            <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Plots</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="maxtemp.html">Max Temperature</a>
+                    <a class="dropdown-item" href="humid.html">Humidity</a>
+                    <a class="dropdown-item" href="cloudy.html">Cloudiness</a>
+                    <a class="dropdown-item" href="wind.html">Wind Speed</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-item nav-link" href="comparisons.html">Comparisons</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-item nav-link" href="data.html">Data</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+  <div class="container-fluid">
+      <div class="row">
+          <div class="col-sm-12 col-md-8">
+              <div class="box">
+                <div class="header">
+                  <h1>Summary: Latitude vs. X</h1>
+                  <hr>
+                  <img id="Fig 1" src="Resources\assets\images\Fig1.png" alt="City Latitude vs. Max Temperature (01/05/17)" height="275" width="400" align="left">
+                  <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To acomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.</p>
+                  <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualiztions created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
+                </div>
+              </div>
+            </div>
+      
+          <div class="col-sm-12 col-md-4">
+            <div class="box">
+              <div class="header">
+                <h2>Visualizations</h2>
+                <hr>
+                  <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                      <a href="maxtemp.html"><img id="Fig 1" src="Resources\assets\images\Fig1.png" alt="Latitude vs. Max Temperature" class="center" width="150"></a>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                      <a href="humid.html"><img id="Fig 2" src="Resources\assets\images\Fig2.png" alt="Latitude vs. Humidity" class="center" width="150"></a>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-12 col-md-6">
+                      <a href="cloudy.html"><img id="Fig 3" src="Resources\assets\images\Fig3.png" alt="Latitude vs. Cloudiness" class="center" width="150"></a>
+                    </div>
+                    <div class="col-sm-12 col-md-6">
+                      <a href="wind.html"><img id="Fig 4" src="Resources\assets\images\Fig4.png" alt="Latitude vs. Wind Speed" class="center" width="150"></a>
+                    </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+      </div>
+  </div>
+</div>
+</body>
